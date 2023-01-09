@@ -9,7 +9,10 @@ interface ButtonProps {
 
 export function Button({ clickHandler, children, design }: ButtonProps) {
   return (
-    <button className={`${design || styles.buttonBase}`} onClick={clickHandler}>
+    <button
+      className={`${design || `${styles.buttonBase}`}`}
+      onClick={clickHandler}
+    >
       {children}
     </button>
   );
