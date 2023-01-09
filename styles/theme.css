@@ -1,0 +1,55 @@
+
+:root{
+  --white: "#fff";
+  --black: "#000";
+  --brand-orange: "#f07d00";
+  --brand-orange-hover: "#d26e00";
+  --brand-grey: "#363636";
+  --brand-lightgrey: "#626262";
+}
+
+:root{
+  font-size: 16px;
+}
+
+
+*, *::before, *::after{
+  box-sizing: "border-box";
+  margin: 0;
+  padding: 0;
+  font-family: '"Roboto", Arial, sans-serif';
+  color: var(--brand-grey),
+}
+
+h1, h2, h3, h4, h5, h6, a, p, ol ul, li{
+  margin-bottom: 1rem;
+}
+
+.grid {
+  display: "flex";
+  padding-left: calc(1.875rem / 1);
+  padding-right: calc(1.875rem / 1);
+  flex: 0 0 auto;
+  flex-wrap: "wrap";
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .grid{
+    padding-left: calc(1.875rem / 2);
+    padding-right: calc(1.875rem / 2);
+  }
+}
+
+.gridElement {
+  width: 100%;
+  padding: 1rem;
+}
+
+
+@media screen and (min-width: 768px) {
+  .gridElement{
+    width: 50%;
+  }
+}

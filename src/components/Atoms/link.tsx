@@ -1,5 +1,4 @@
-import { MouseEventHandler } from "react";
-import { linkStyle } from "./link.css.ts";
+import linkBase from "./link.module.css";
 interface LinksProps {
   children: any;
   link: string;
@@ -12,7 +11,7 @@ export function Link({ children, link, external, design }: LinksProps) {
     <a
       href={link}
       target={`${external && "_blank"}`}
-      className={`${design || linkStyle.primary}`}
+      className={`${design || linkBase}`}
     >
       {children}
     </a>

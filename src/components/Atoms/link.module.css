@@ -1,0 +1,25 @@
+.linkBase {
+  padding: 12px;
+  border: 0;
+  margin-right: 20px;
+  color: #fff ; /*vars.color.white; figure out how to get variable */
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.linkPrimary {
+  color: var(--brand-orange);
+}
+
+.linkPrimary:hover {
+  color: var(--brand-orange-hover);
+}
+
+.linkSecondary {
+  color: var(--brand-grey);
+}
+
+.linkSecondary:hover {
+  color: var(--brand-lightgrey);
+}
+

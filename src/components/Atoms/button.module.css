@@ -1,0 +1,29 @@
+.buttonBase {
+  padding: 20px;
+  border: 0;
+  margin-right: 20px;
+  color: var(--white);
+  cursor: "pointer";
+}
+
+@media screen and (min-width: 768px) {
+  .buttonBase{
+    padding: 12px;
+  }
+}
+
+.buttonPrimary{
+  background: var(--brand-orange);
+}
+
+.buttonPrimary:hover{
+  background: var(--brand-orange-hover);
+}
+
+.buttonSecondary{
+  background: var(--brand-grey);
+}
+
+.buttonSecondary:hover{
+  background: var(--brand-lightgrey);
+}

@@ -1,5 +1,5 @@
 import { MouseEventHandler } from "react";
-import { buttonStyle } from "./button.css";
+import styles from "./button.module.css";
 
 interface ButtonProps {
   clickHandler: MouseEventHandler;
@@ -9,10 +9,7 @@ interface ButtonProps {
 
 export function Button({ clickHandler, children, design }: ButtonProps) {
   return (
-    <button
-      className={`${design || buttonStyle.primary}`}
-      onClick={clickHandler}
-    >
+    <button className={`${design || styles.buttonBase}`} onClick={clickHandler}>
       {children}
     </button>
   );
