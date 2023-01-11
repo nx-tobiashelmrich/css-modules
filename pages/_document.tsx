@@ -3,10 +3,8 @@ import { Html, Head, Main, NextScript } from "next/document";
 export default function Document() {
   return (
     <Html lang="en">
-      <Head>
-        <link rel="stylesheet" href="../styles/theme.css" />
-      </Head>
-      <body>
+      <Head />
+      <body className="theme">
         <Main />
         <NextScript />
       </body>

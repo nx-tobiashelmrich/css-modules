@@ -10,7 +10,7 @@ interface ButtonProps {
 export function Button({ clickHandler, children, design }: ButtonProps) {
   return (
     <button
-      className={`${design || `${styles.buttonBase}`}`}
+      className={`${styles.buttonBase} ${design || `${styles.buttonPrimary}`}`}
       onClick={clickHandler}
     >
       {children}

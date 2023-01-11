@@ -1,8 +1,12 @@
+@value theme: 'theme.css';
+@value white, brandOrange, brandOrangeHover, brandGrey, brandLightGrey from theme;
+
+
 .buttonBase {
   padding: 20px;
   border: 0;
   margin-right: 20px;
-  color: var(--white);
+  color: white;
   cursor: "pointer";
 }
 
@@ -13,17 +17,17 @@
 }
 
 .buttonPrimary{
-  background: var(--brand-orange);
+  background: brandOrange;
 }
 
 .buttonPrimary:hover{
-  background: var(--brand-orange-hover);
+  background: brandOrangeHover;
 }
 
 .buttonSecondary{
-  background: var(--brand-grey);
+  background: brandGrey;
 }
 
 .buttonSecondary:hover{
-  background: var(--brand-lightgrey);
+  background: brandLightGrey;
 }

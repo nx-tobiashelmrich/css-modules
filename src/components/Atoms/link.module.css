@@ -1,25 +1,29 @@
+
+@value theme: 'theme.css';
+@value white, brandOrange, brandOrangeHover, brandGrey, brandLightGrey from theme;
+
 .linkBase {
   padding: 12px;
   border: 0;
   margin-right: 20px;
-  color: #fff ; /*vars.color.white; figure out how to get variable */
+  color: white;
   cursor: pointer;
   text-decoration: none;
 }
 
 .linkPrimary {
-  color: var(--brand-orange);
+  color: brandOrange;
 }
 
 .linkPrimary:hover {
-  color: var(--brand-orange-hover);
+  color: brandOrangeHover;
 }
 
 .linkSecondary {
-  color: var(--brand-grey);
+  color: brandGrey;
 }
 
 .linkSecondary:hover {
-  color: var(--brand-lightgrey);
+  color: brandLightGrey;
 }
 

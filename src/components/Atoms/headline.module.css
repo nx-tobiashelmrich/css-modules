@@ -1,7 +1,10 @@
+@value theme: 'theme.css';
+@value brandOrange, brandGrey from theme;
+
 .headlinePrimary {
-  color: var(--brand-grey);
+  color: brandGrey;
 }
 
 .headlineSecondary{
-  color: var(--brand-orange);
+  color: brandOrange;
 }

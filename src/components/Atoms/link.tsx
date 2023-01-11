@@ -1,4 +1,5 @@
-import linkBase from "./link.module.css";
+import styles from "./link.module.css";
+
 interface LinksProps {
   children: any;
   link: string;
@@ -11,7 +12,7 @@ export function Link({ children, link, external, design }: LinksProps) {
     <a
       href={link}
       target={`${external && "_blank"}`}
-      className={`${design || linkBase}`}
+      className={`${styles.linkBase} ${design || styles.linkPrimary}`}
     >
       {children}
     </a>
