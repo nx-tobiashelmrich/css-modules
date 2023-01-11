@@ -1,5 +1,3 @@
-import { headlinePrimary, headlineSecondary } from "./headline.module.css";
-
 interface Tags {
   children: any;
   tag?: string;
